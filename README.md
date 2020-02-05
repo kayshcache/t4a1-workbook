@@ -25,7 +25,7 @@
 ## Q12	Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language
 
 ## Q13	For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes
-```
+``` javascript
 class Car {
   constructor(brand) {
     this.carname = brand;
