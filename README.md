@@ -4,7 +4,7 @@
 ### Provide an overview and description of a standard source control process for a large project
 
 ## Q2
-### What are the most important aspects of quality software?
+#### What are the most important aspects of quality software?
 
 ## Q3	Outline a standard high level structure for a MERN stack application and explain the components
 
