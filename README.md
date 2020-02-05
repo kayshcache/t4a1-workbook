@@ -1,10 +1,8 @@
 # T4A1 - Developer Workbook
 {Fullname}_T4A1.zip
-## Q1
-### Provide an overview and description of a standard source control process for a large project
+## Q1 Provide an overview and description of a standard source control process for a large project
 
-## Q2
-#### What are the most important aspects of quality software?
+## Q2 What are the most important aspects of quality software?
 
 ## Q3	Outline a standard high level structure for a MERN stack application and explain the components
 
