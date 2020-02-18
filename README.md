@@ -10,7 +10,8 @@ Pull requests merge branches ( does it merge the branch back into master? )
 - Use branching to work on new features, branch from master when working on fixes or new features, the branch names should be very descriptive.
 - Commit messages should explain why a commit was made. If bugs are found the commits may be needed to locate them.
 - Pull requests can initiate discussion between developers or teams to determine changes planned for merging.
-- 
+- It's possible to deploy branches to test the code running in production
+- Finally merging to master
 
 ## Q2 What are the most important aspects of quality software?
 The most important aspects and characteristics of quality software are readability and code commenting. Reusable code, integrity, reliability, and confidentiality.
@@ -46,7 +47,13 @@ It can be achieved via a number of approaches. Some examples of methods of contr
 
 ## Q8	Explain type coercion, using examples from the JavaScript programming language
 Type coercion can be achieved with JavaScript in a number of ways.
-- explicitly numbers can be coerced to strings with the operator .toString()
+- explicit type casting - numbers and other primitives can be coerced to string with the function Boolean(x) Number(x) String(x)
+- The loose equality operator (==) does some implicit type coercion.
+- implicit coercion is done on a value or expression when placed in a conditional statement or used with logical operators, it is coerced to boolean.
+- When using logical operators, the coercion is done internally, the original operands are returned by the expression
+- The Object prototype has .valueOf() and .toString() methods available for derived types for explicit coercion.
+
+https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/
 
 ## Q9	Explain data types, using examples from the JavaScript programming language
 Although JS is a loosely typed language, awareness of datatypes are very important.
