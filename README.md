@@ -1,11 +1,16 @@
 # T4A1 - Developer Workbook
 {Fullname}__T4A1.zip
+
 ## Q1 Provide an overview and description of a standard source control process for a large project
 The git repository must be created first and connected with a remote repository so that all the developers can commit to it. The workflow description goes here:
 
 When the project is larger will everyone be on their own branch?
 Pull requests merge branches ( does it merge the branch back into master? )
 - Infinitive verbs start git commit messages so that it reads like a set of instructions later.
+- Use branching to work on new features, branch from master when working on fixes or new features, the branch names should be very descriptive.
+- Commit messages should explain why a commit was made. If bugs are found the commits may be needed to locate them.
+- Pull requests can initiate discussion between developers or teams to determine changes planned for merging.
+- 
 
 ## Q2 What are the most important aspects of quality software?
 The most important aspects and characteristics of quality software are readability and code commenting. Reusable code, integrity, reliability, and confidentiality.
