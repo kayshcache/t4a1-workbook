@@ -12,7 +12,9 @@ The most important aspects and characteristics of quality software are readabili
 - readability
 - usability design considers the user experience
 - career limiting moves
-- 
+- secure up and down the stack
+- semantic versioning
+- separation of concerns: presentation logic (platform agnostic, ), business logic (eg. data fetching, user account behavior, application specific )
 
 ## Q3	Outline a standard high level structure for a MERN stack application and explain the components
 Mongo
