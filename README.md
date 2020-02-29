@@ -41,6 +41,8 @@ The most important aspects and characteristics of quality software are readabili
 	sensible directory organization (eg. MVC)
 	single responsibility principle
 	
+- get it working, get it right, get it efficient
+- common language referring to the Gang of Four
 - test driven
 - fit for purpose: does whats expected
 - resource frugal
