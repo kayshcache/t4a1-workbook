@@ -1,8 +1,15 @@
+# Reading List from Michael
+- Wikipedia CORS
+- 
 # T4A1 - Developer Workbook
 {Fullname}__T4A1.zip
 
 ## Q1 Provide an overview and description of a standard source control process for a large project
 The git repository must be created first and connected with a remote repository so that all the developers can commit to it. The workflow description goes here:
+Branch from your own fork of the repo
+Pull request from your own 
+every morning git pull 
+push 
 
 When the project is larger will everyone be on their own branch?
 Pull requests merge branches ( does it merge the branch back into master? )
@@ -12,6 +19,7 @@ Pull requests merge branches ( does it merge the branch back into master? )
 - Pull requests can initiate discussion between developers or teams to determine changes planned for merging.
 - It's possible to deploy branches to test the code running in production
 - Finally merging to master
+- !!weNeedABooleanHere the bang bang marker tells other developers that this thing ought always be a bool
 
 ## Q2 What are the most important aspects of quality software?
 The most important aspects and characteristics of quality software are readability and code commenting. Reusable code, integrity, reliability, and confidentiality.
@@ -21,6 +29,22 @@ The most important aspects and characteristics of quality software are readabili
 - secure up and down the stack
 - semantic versioning
 - separation of concerns: presentation logic (platform agnostic, ), business logic (eg. data fetching, user account behavior, application specific )
+- always follow conventions - depart from them at your peril.
+- changeable: 
+	readable
+	semantic sensible variable names
+	modularized
+	no side-effects
+	if it has state it has no side-effects
+	tests will tell you if it can or cannot be changeable
+	self-documenting with semantic 
+	sensible directory organization (eg. MVC)
+	single responsibility principle
+	
+- test driven
+- fit for purpose: does whats expected
+- resource frugal
+- latency/throughput efficiency
 
 ## Q3	Outline a standard high level structure for a MERN stack application and explain the components
 Mongo
@@ -110,3 +134,8 @@ for (model of models) {
   console.log(mycar.show())
 }
 ```
+CURL notes:
+-I just get headers
+-vv very verbose
+-x GET/POST/...
+
