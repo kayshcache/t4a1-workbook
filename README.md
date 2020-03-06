@@ -1,6 +1,3 @@
-# Reading List from Michael
-- Wikipedia CORS
-- 
 # T4A1 - Developer Workbook
 {Fullname}__T4A1.zip
 
@@ -58,6 +55,7 @@ Node
 Project Management and Client Liason
 Scope creep, stakeholder risk management, graphic design
 web development: db, frontend/backend, server
+Git workflow for collaboration
 
 ## Q5	With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges
 T3A3 Required that I make decisions about where to process the data. It was possible to work with the data using SQL or process it in the server side or on the front.
@@ -97,47 +95,61 @@ Check points with educator:
 - brackets for dynamic props
 
 ## Q12	Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language
-- Parsing to objects JSON.parse() JSON.stringify()
+JSON is a standard structure and syntax for object nested data that can be handled in many programming languages. In a simple way, it is a text string shared between APIs that describes data in a structure that is similar to the Object.prototype of JavaScript. The string can be parsed into JS using the parse method of the JSON object in Javascript. Vice versa JSON can be created with the stringify method.
+- JSON.parse() JSON.stringify()
 
 ## Q13	For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes
 ``` javascript
+// Class declaration syntax - said to be sugar for declaring objects since its incorporation in ES6.
 class Car {
+// constructor function builds objects when they are declared
   constructor(brand) {
+// the this keyword declares the properties of the object created with the class
     this.carname = brand;
   }
+// object methods that all objects receive upon instantiation.
   present() {
+// Methods can return just like functions
     return 'I have a ' + this.carname;
   }
 }
 
+// Inheritance from the class mentioned in the extends statement incorporating all of the properties and methods
 class Model extends Car {
   constructor(brand, mod) {
+// The super statement declares the properties of the parent class
     super(brand);
+// New properties specific to the child class are also declared with the this keyword
     this.model = mod;
   }
   show() {
+// The methods from the parent class are available to the child
     return this.present() + ', it was made in ' + this.model;
   }
 }
 
+// Declares an array of strings that can presumably be used as brand arguments for the create of objects
 let makes = ["Ford", "Holden", "Toyota"]
+// Array from method creates an array from another object. Here the 'new' operator is used to call the constructor in the Array prototype and argument passed indicating the length of the array to be created. As the second argument of the from() method, the anonymous arrow function is given to map over the new array incrementing by returning 1980 plus the index number. Producing an array of years counting 40 years from 1980.
 let models = Array.from(new Array(40), (x,i) => i + 1980)
 
+// Function takes two arguments and returns a random number in a given range
 function randomIntFromInterval(min,max) { // min and max included
+// Math.floor rounds a number down. .random returns a decimal number between 0 and 1.
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 
 for (model of models) {
-
+// For loop loops over the models array and produces a car/model object, rather arbitarily, as many cars as the length of the models array. Selects at random from one of the 3 makes then selects a model year also randomly and uses this fascinating information to create an exhilarating ride into more meaningless examples of using classes that apply to nothing but this idiotic example.
   make = makes[randomIntFromInterval(0,makes.length-1)]
+// Such genius - i presume it's intentional to limit the model range to 1980-82 (0, 2)
   model = models[randomIntFromInterval(0,makes.length-1)]
     
+// Instantiate a Model object that inherits its meaningless properties and methods from the Car class.
   mycar = new Model(make, model);
+// log the return value from the model object to the console because that's what javascript is for.
   console.log(mycar.show())
+// This is the closing curly bracket, it couldn't have come sooner.
 }
 ```
-CURL notes:
--I just get headers
--vv very verbose
--x GET/POST/...
 
