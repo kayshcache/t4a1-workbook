@@ -46,10 +46,13 @@ The most important aspects and characteristics of quality software are readabili
 - latency/throughput efficiency
 
 ## Q3	Outline a standard high level structure for a MERN stack application and explain the components
-Mongo
-Express
-React
-Node
+MERN is comprised of a distinct front and backend, it's effectively 2 separate applications written with Javascript utilizing 4 key technologies:
+Mongo is a NoSQL db that can be installed on the system with the backend or elsewhere.
+Express is a server framework for use with NodeJs, it abstracts a lot of the code required to produce an HTTP web server. This can often be known the server or API
+React is a frontend framework first and foremost for producing a web UI that communicates with a backend to read and write data from the database. This component is typically referred to as the React App or simply frontend.
+NodeJS is a Javascript platform running on the Chrome V8 Engine and allows developers to run Javascript applications on a system outside of where JS used to be typically run, a browser.
+These technologies are leveraged and combined to produce hosted web applications.
+In terms of components, as there are typically 2 or more distinct applications in a MERN stack, both the API and React App contain source code for the running of their respective business logic. The separation of concern can differ greatly depending on the kind of application way the stack is comprised. React composes UI components and concerns itself primarily with user interaction and display of content. Whereas the API manages the important business functions and CRUD operations for the datastore.
 
 ## Q4	A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 Project Management and Client Liason
@@ -58,10 +61,10 @@ web development: db, frontend/backend, server
 Git workflow for collaboration
 
 ## Q5	With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges
-T3A3 Required that I make decisions about where to process the data. It was possible to work with the data using SQL or process it in the server side or on the front.
+T3A3 Required that I make decisions about where to process the data. It was possible to work with the data using SQL or process it in the server side or on the front. Knowledge relating to the capabilities of each technology working together was vital to make such decisions. The patience of debugging and anticipating bugs was important in order to not feel defeated and carry on. There is always the urge to over engineer, to move towards a generic paradigm and cover increasing numbers of conceivable use cases. It has been an important skill, almost an instinct, to cultivate a resilience to digression from the programming problems at hand and focus on reaching viable solutions. Conversely, as I stepped into a solution for handling the connection methods to the SQL db, I recognized that I was still mostly incapable of knowing how to make use of OOP in a way that isn't merely a pointless academic exercise for demonstrating the principles of Object-based programming - throughout the endeavor it came up not to be defeated or overwhelmed by the volume of time wasted doing this bootcamp and try to focus on covering the ground one needs to get a rounded exposure to advanced programming techniques. With the tremendous volumes of information and opinion online today I time and time again must increase the sophication of selective narrow scope.
 
 ## Q6	With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature
-T3A3 My knowledge of specifics within technologies was limited, however, the skill of figuring out the solutions to any problems that I encounter was well established. By being persistent and knowing fundamentals I was able to debug as well as make decisions about what path to use to proceed with the project.
+T3A3 My knowledge of specifics within technologies was limited, however, the skill of figuring out the solutions to any problems that I encounter was well established. By being persistent and calm, learning each thing in turn while keeping a low stakes serenity I was able to debug as well as make decisions about what path to use to proceed with the project. 
 
 ## Q7	Explain control flow, using an example from the JavaScript programming language
 In the context of web development, control flow guides the logic of a program as it processes data or organizes layout and interactivity of components.
